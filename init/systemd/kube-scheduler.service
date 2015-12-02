@@ -12,6 +12,7 @@ ExecStart=/usr/bin/kube-scheduler \
 	    $KUBE_MASTER \
 	    $KUBE_SCHEDULER_ARGS
 Restart=on-failure
+RestartSec=3
 LimitNOFILE=65536
 
 [Install]
